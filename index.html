@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Životopis - Kateřina Mackovíková</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            max-width: 900px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .language-toggle {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function toggleLanguage(lang) {
+            document.documentElement.lang = lang;
+            const cz = document.getElementsByClassName('cz');
+            const en = document.getElementsByClassName('en');
+            for (let el of cz) el.style.display = lang === 'cs' ? 'block' : 'none';
+            for (let el of en) el.style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body onload="toggleLanguage('cs')">
+
+    <div class="language-toggle">
+        <button onclick="toggleLanguage('cs')">Čeština</button>
+        <button onclick="toggleLanguage('en')">English</button>
+    </div>
+
+    <header>
+        <img src="tvoje-fotka.jpg" alt="Profilová fotka" class="photo">
+        <h1>Kateřina Mackovíková</h1>
+        <p>Český Brod | +420 736 163 682 | k.mackovikova@gmail.com</p>
+    </header>
+
+    <!-- Pracovní zkušenosti -->
+    <section class="section">
+        <h2 class="cz">Pracovní zkušenosti</h2>
+        <h2 class="en">Work Experience</h2>
+
+        <div>
+            <strong>Business Intelligence Analyst | 12/2024 - dosud</strong><br>
+            Vodafone Czech Republic a.s.<br>
+            <span class="cz">
+                - Kontrola kvality dat a automatizace reportů (Power Query, Python)<br>
+                - Návrh nového formátu reportů pro sledování výkonnosti obchodních zástupců a jejich motivaci<br>
+                - Finanční reporting s cílem identifikovat slabá místa spolupráce s partnery<br>
+                - Analýza interakcí se zákazníky, kvality služeb a stavu prodejen (mystery shopping, audity)
+            </span>
+            <span class="en">
+                - Data quality checks and report automation (Power Query, Python)<br>
+                - Design of new reporting formats to track sales reps' performance and motivation<br>
+                - Financial reporting aimed at identifying weak points in partner collaboration<br>
+                - Analysis of customer interactions, service quality, and store conditions (mystery shopping, audits)
+            </span>
+        </div>
+        <br>
+
+        <div>
+            <strong>Business Intelligence Analyst | 07/2021 - 11/2024</strong><br>
+            BILLIGENCE PTY LTD<br>
+            <span class="cz">
+                - Mateřská dovolená (09/2022 - 10/2023), poté částečný úvazek (0,5)<br>
+                - Vývoj datových aplikací (Python, Streamlit), tvorba datových pipeline (Postman, Mage, Snowflake)<br>
+                - Verzování kódu (GIT, GitHub, Visual Studio Code)<br>
+                - Migrace reportů (Cognos ➡ Tableau, Microstrategy ➡ Tableau), edukativní videa, podpora obchodní strategie
+            </span>
+            <span class="en">
+                - Maternity leave (09/2022 - 10/2023), then part-time (0.5 FTE)<br>
+                - Data app development (Python, Streamlit), ELT pipelines (Postman, Mage, Snowflake)<br>
+                - Version control (GIT, GitHub, Visual Studio Code)<br>
+                - Report migration (Cognos ➡ Tableau, Microstrategy ➡ Tableau), educational videos, business strategy support
+            </span>
+        </div>
+        <br>
+
+        <div>
+            <strong>Customer Service Representative | 02/2019 - 04/2021</strong><br>
+            COSCO SHIPPING LINES (CENTRAL EUROPE) S.R.O.<br>
+            <span class="cz">
+                - Reporting importních zásilek (automatizace pomocí VBA)<br>
+                - Péče o zákazníky, dokumentace, řešení reklamací<br>
+                - Komunikace s evropskými a čínskými pobočkami
+            </span>
+            <span class="en">
+                - Import shipment reporting (VBA automation)<br>
+                - Customer care, documentation, issue resolution<br>
+                - Communication with European and Chinese offices
+            </span>
+        </div>
+        <br>
+
+        <div>
+            <strong>Transport Representative | 12/2017 - 12/2018</strong><br>
+            C.H. ROBINSON CZECH REPUBLIC S.R.O.<br>
+            <span class="cz">
+                - Získání klíčového zákazníka pobočky<br>
+                - Cenové nabídky, rozšiřování dopravního portfolia<br>
+                - Aktivní komunikace v AJ, ŠJ, PJ, emaily v NJ
+            </span>
+            <span class="en">
+                - Secured key client for the branch<br>
+                - Pricing, expansion of carrier portfolio<br>
+                - Active communication in English, Spanish, Polish, email in German
+            </span>
+        </div>
+        <br>
+
+        <div>
+            <strong>Disponent | 01/2015 - 11/2017</strong><br>
+            RHENUS LOGISTICS S.R.O.<br>
+            <span class="cz">
+                - Koordinace kolegů, zastupování Team Leadera<br>
+                - Organizace automotive projektu (JIT), cenové nabídky<br>
+                - Komunikace v AJ a ŠJ
+            </span>
+            <span class="en">
+                - Team coordination, acting as Team Leader substitute<br>
+                - Automotive project organization (JIT), pricing<br>
+                - Communication in English and Spanish
+            </span>
+        </div>
+    </section>
+
+    <!-- Kurzy -->
+    <section class="section">
+        <h2 class="cz">Kurzy</h2>
+        <h2 class="en">Courses</h2>
+        <p>03/2021 - 06/2021: DIGITÁLNÍ AKADEMIE: DATA | Czechitas</p>
+    </section>
+
+    <!-- Jazykové dovednosti -->
+    <section class="section">
+        <h2 class="cz">Jazyky</h2>
+        <h2 class="en">Languages</h2>
+        <p>Angličtina / English - Pokročilá / Advanced</p>
+        <p>Španělština / Spanish - Pokročilá / Advanced</p>
+    </section>
+
+    <!-- Zájmy -->
+    <section class="section">
+        <h2 class="cz">Zájmy</h2>
+        <h2 class="en">Interests</h2>
+        <p>Rodina, zdraví (sport, otužování), sebevzdělávání, četba, konference a veletrhy, cestování</p>
+    </section>
+
+    <!-- Vzdělání -->
+    <section class="section">
+        <h2 class="cz">Vzdělání</h2>
+        <h2 class="en">Education</h2>
+        <p>2014 - 2020: Informační technologie | Ing. | Česká zemědělská univerzita v Praze</p>
+    </section>
+
+    <!-- Dovednosti -->
+    <section class="section">
+        <h2 class="cz">Dovednosti</h2>
+        <h2 class="en">Skills</h2>
+        <p>Excel, Power Query, VBA, Power Automate, Power Pivot, Tableau, GIT, SQL, Python, Alteryx, API, základ Power BI</p>
+    </section>
+
+</body>
+</html>
